@@ -469,62 +469,90 @@
 </footer>
 
 
-
-<div class="modal-overlay is-open">
+<div class="backdrop">
   <div class="modal">
-    <button class="modal-close-btn" type="button">
-      <svg class="modal-icon-close" width="8" height="8">
+    <!--button-close-backdrop-->
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-icon" width="8" height="8">
         <use href="./images/icons.svg#icon-close-black"></use>
       </svg>
     </button>
-    <p class="modal-title">Leave your contacts and we will call you back</p>
+    <p class="text-modal">Leave your contacts and we will call you back</p>
+    <!--form input-->
     <form class="modal-form">
-      <div class="modal-filed" style="margin-bottom: 16px;">
-        <label for="name" class="modal-label">Name</label>
+      <div class="modal-form-div">
+        <label for="user-name" class="modal-label">Name</label>
         <div class="modal-input-wrap">
-          <input type="text" class="modal-input" name="user-name" id="user-name" style="padding-left: 38px;">
-          <svg class="modal-filed-icon" width="18" height="24">
+          <input
+            type="text"
+            class="modal-input"
+            name="user-name"
+            id="user-name"
+          />
+          <svg class="modal-input-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-person-black"></use>
           </svg>
         </div>
       </div>
-      <div class="modal-filed" style="margin-bottom: 24px;">
-        <label for="phone" class="modal-label">Phone</label>
+      <div class="modal-form-div">
+        <label for="user-phone" class="modal-label">Phone</label>
         <div class="modal-input-wrap">
-          <input type="tel" class="modal-input" name="user-privacy" id="user-privacy" style="padding-left: 38px;">
-          <svg class="modal-filed-icon" width="18" height="24">
+          <input
+            type="tel"
+            class="modal-input"
+            name="user-phone"
+            id="user-phone"
+          />
+          <svg class="modal-input-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-phone-black"></use>
           </svg>
         </div>
       </div>
-      <div class="modal-filed" style="margin-bottom: 24px;">
-        <label for="modal-email" class="modal-label">Email</label>
+      <div class="modal-form-div">
+        <label for="user-email" class="modal-label">Email</label>
         <div class="modal-input-wrap">
-          <input type="email" class="modal-input" name="email" id="modal-email" style="padding-left: 38px;">
-          <svg class="modal-filed-icon" width="18" height="24">
+          <input
+            type="email"
+            class="modal-input"
+            name="user-email"
+            id="user-email"
+          />
+          <svg class="modal-input-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-email-black"></use>
           </svg>
         </div>
       </div>
-      <div class="modal-filed" style="margin-bottom: 24px;">
+      <div class="modal-comment-div">
         <label for="user-comment" class="modal-label">Comment</label>
-        <textarea class="modal-text" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          placeholder="Text input"
+          class="text-input"
+        ></textarea>
       </div>
-      <div class="modal-filed">
-        <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden" value="true">
-        <label for="policy" class="check-text"> 
-          <span class="check-icon">
-            <svg class="check-icon-wrap" width="10" height="8">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-          </span>
-          I accept the terms and conditions of the <a href="#" class="policy-link">Privacy Policy</a>
+      <!--Checkbox-->
+      <div class="checkbox-form-div">
+        <input
+          type="checkbox"
+          name="user-privacy"
+          id="user-privacy"
+          class="modal-check visually-hidden"
+          value="true"
+        />
+        <label for="user-privacy" class="check-text"
+          ><span class="span-checkbox">
+            <svg class="modal-checkbox-icon" width="10" height="8">
+              <use href="./images/icons.svg#icon-vector"></use></svg></span
+          >I accept the terms and conditions of the
+          <a href="#" class="link-policy">Privacy Policy</a>
         </label>
       </div>
-      <button type="submit" class="modal-send-btn">Send</button>
+      <button class="send-button" type="submit">Send</button>
     </form>
   </div>
 </div>
+
 
 </body>
 </html>
